@@ -29,7 +29,7 @@ const working = true;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
     <link rel="icon" href="/favicon.ico"/>
     <meta name="generator" content={Astro.generator}/>
-    <title>About Astro</title>
+    <title>{pageTitle}</title>
 </head>
 <body>
 
@@ -39,14 +39,24 @@ const working = true;
     <main>
         <section id="hero">
             <img src={astroLogo.src} width="115" height="48" alt="Astro Homepage"/>
-            <h1>My Astro Website</h1>
-            <h2>My Website v9 (Astro Website v1)</h2>
-            <p>9th Website about me but my 1st Website using Astro. The others were HTML and CSS.</p>
+            <h1>{pageTitle}</h1>
+            <!--<h2>My Website v9 (Astro Website v1)</h2>-->
+            <!--<p>9th Website about me but my 1st Website using Astro. The others were HTML and CSS.</p>-->
+            <p>
+                My name is {identity.name}. I am a college student studying {identity.collegeMajor}. I want to work
+                in {identity.careerField}. During my free time, I do {identity.hobbies.join(", ")}.
+                I am proficient in {identity.skills.at(0)}. I
+                know {identity.skills.slice(1).join(", ")}
+            </p>
             <section id="links">
                 <a href="/">Home</a>
                 <a href="/about/">About</a>
                 <a href="/blog">Blog</a>
             </section>
+            {
+                working &&
+                    <p>I am currently working on my projects.</p>
+            }
         </section>
     </main>
 </div>
