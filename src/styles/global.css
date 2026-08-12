@@ -172,3 +172,45 @@ code {
         line-height: 1.5;
     }
 }
+
+
+/* Custom */
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.website-footer {
+    /*justify-content: left;*/
+    /*align-content: center;*/
+    /*padding: 10px;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    background-color: rgb(228 228 228 / 0.27);
+}
+
+.social2 button {
+    background-color: rgb(225, 225, 225, 0.28);
+    border-width: 0px;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 250ms ease;
+    margin-right: 10px;
+}
+
+.social2 button:hover {
+    background-color: rgb(181, 181, 181, 0.27);
+    border-width: 0px;
+    border-radius: 7.5px;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
