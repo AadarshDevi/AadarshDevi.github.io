@@ -2,4 +2,19 @@
 const {platform, username} = Astro.props;
 ---
 
-<a href=`http://www.${platform.toString().toLowerCase()}.com/${username}`> {platform}</a>
+<!--<a href=`https://www.${platform.toString().toLowerCase()}.com/${username}/` class="social">-->
+<!--    <div>-->
+<!--        <p>{platform}</p>-->
+<!--    </div>-->
+<!--</a>-->
+
+<a href=`https://www.${platform.toString().toLowerCase()}.com/${username}/` class="social2">
+    <button>
+        {platform}
+    </button>
+</a>
+
+<!-- Instagram: https://www.instagram.com/aadarsh__devi/ -->
+<!-- GitHub: https://github.com/AadarshDevi -->
+<!-- YouTube: https://www.youtube.com/@aadarshdevi -->
+<!-- LinkedIn: https://www.linkedin.com/in/aadarsh-devi-593979403/ -->
